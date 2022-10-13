@@ -1,0 +1,14 @@
+.inputCheck{
+    width: 20px;
+    height: 20px;
+}
+
+.cardInput{
+    width: auto;
+}
+
+.contenidoInput{
+    background: white;
+    border-radius: 5px;
+    padding: 5px;
+}

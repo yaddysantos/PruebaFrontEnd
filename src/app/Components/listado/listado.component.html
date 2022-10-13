@@ -1,0 +1,26 @@
+<div class="container pt-5 claseTodo">
+    <h2 style="color:#004646">{{listadoService.itemSeleccionado=='1' ? 'All' :'Delete'}}</h2>
+
+    <hr style="border-style: dashed;">
+   
+    <div *ngIf="listadoService.itemSeleccionado=='1'">
+        <div *ngFor="let lista of listado" class="form-check contenidoInput">
+            <input class="m-1 form-check-input inputCheck" type="checkbox" value="" id="flexCheckDefault">
+            <label class="p-1 pr-5 form-check-label" for="flexCheckDefault" style="color: #077e7e;">
+                {{lista.descripcion}}
+            </label>
+            
+            <button class="btn">
+                <i style="color:red;" class="bi bi-x-lg" (click)="eliminarRegistro(lista)"></i>    
+            </button>
+        </div> 
+    </div>
+
+    <div *ngIf="listadoService.itemSeleccionado=='2'">
+        <div  *ngFor="let lista of ListaEliminados" class="form-check contenidoInput" >
+          <label class="p-1 pr-5 form-check-label" for="flexCheckDefault" style="color: #077e7e;">
+              {{lista.descripcion}}
+          </label>
+        </div>
+    </div>
+</div>

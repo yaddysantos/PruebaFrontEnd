@@ -1,0 +1,19 @@
+.tittleTodo{
+    color: #004646;
+    font-weight: bold;
+}
+
+.example-card {
+    max-width: 400px;
+    background-color: transparent;
+}
+
+.btnAdd{
+    background: white;
+    border: 1px solid #ced4da;
+}
+
+.btnAdd:hover{
+    background-color: #10acac !important;
+    border: 1px solid #ced4da;
+}
